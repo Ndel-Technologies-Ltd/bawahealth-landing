@@ -5,7 +5,7 @@ export const HowItWorks: React.FC = () => {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-5xl font-bold text-[#0f2d34] mb-4">How it works</h2>
         </div>
         

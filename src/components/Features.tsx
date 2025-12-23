@@ -3,7 +3,7 @@ import { ShieldCheck, Lock, History } from 'lucide-react';
 
 export const Features: React.FC = () => {
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-20 bg-white">
+    <section className="py-24 px-2 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-[#0f2d34] mb-20">Why Choose BawaHealth TeleMed?</h2>
         

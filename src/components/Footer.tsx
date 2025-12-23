@@ -1,5 +1,6 @@
 import React from 'react';
 import { Activity, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
+import logo from "../assets/f-logo.svg";
 
 export const Footer: React.FC = () => {
   return (
@@ -9,10 +10,13 @@ export const Footer: React.FC = () => {
         {/* Logo Column */}
         <div className="flex flex-col items-start">
           <div className="flex items-center gap-3 text-[#127c93] font-bold text-3xl">
-            <Activity size={56} strokeWidth={2} />
+            
             <div className="leading-[1.1] flex flex-col text-white">
-              <span>Bawa</span>
-              <span>Health</span>
+              <img
+                          src={logo}
+                          alt="Bawa Health Logo"
+                          className="h-20 w-auto"
+                        />
             </div>
           </div>
         </div>

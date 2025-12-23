@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
           {/* Left Content - Straight Overlapping Images */}
           <div className="relative h-[400px] w-full max-w-md mx-auto lg:mx-0">
             {/* Back Image (Straight) */}
-            <div className="absolute top-0 left-0 w-[75%] h-[85%] rounded-[32px] overflow-hidden border-[6px] border-[#127c93] shadow-xl z-10">
+            <div className="absolute top-0 left-0 w-[75%] h-[85%] rounded-[32px] overflow-hidden border-[5px] border-[#127c93] shadow-xl z-20">
               <img 
                 src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" 
                 alt="Doctor with clipboard" 
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
               />
             </div>
             {/* Front Image (Straight) */}
-            <div className="absolute bottom-0 right-0 w-[75%] h-[85%] rounded-[32px] overflow-hidden border-[6px] border-[#127c93] shadow-2xl z-20 bg-white">
+            <div className="absolute -bottom-10 -right-24 w-[75%] h-[85%] rounded-[32px] overflow-hidden border-[5px] border-[#127c93] shadow-2xl z-10 bg-white">
                <img 
                 src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" 
                 alt="Doctor checking patient" 

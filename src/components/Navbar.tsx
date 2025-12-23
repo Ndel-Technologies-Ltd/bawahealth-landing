@@ -1,14 +1,18 @@
 import React from 'react';
-import { Bell, Activity } from 'lucide-react';
+import { Bell} from 'lucide-react';
+import logo from "../assets/logo.svg";
 
 export const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between px-6 py-6 md:px-12 lg:px-20 bg-transparent relative z-20">
       <div className="flex items-center gap-2 text-[#127c93] font-bold text-xl">
-        <Activity size={32} strokeWidth={2.5} />
+    
         <div className="leading-none flex flex-col text-[#0f2d34]">
-          <span>Bawa</span>
-          <span>Health</span>
+          <img
+            src={logo}
+            alt="Bawa Health Logo"
+            className="h-10 w-auto"
+          />
         </div>
       </div>
       

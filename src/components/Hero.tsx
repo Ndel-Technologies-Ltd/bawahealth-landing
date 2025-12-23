@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
         {/* Centered Heading with Frame - No Left Border */}
         <div className="flex justify-center mb-16">
           <div className="relative border-y-2 border-r-2 border-white border-l-0 rounded-r-[60px] px-12 py-10 md:px-24">
-             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#0f2d34] leading-[1.1] text-center">
+             <h1 className="text-5xl md:text-6xl lg:text-7xl text-[#0f2d34] leading-[1.1] text-center">
               Enjoy Healthcare at <br /> 
               your <span className="text-[#127c93]">Fingertips</span>
             </h1>

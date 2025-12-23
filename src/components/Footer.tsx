@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
+import {Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
 import logo from "../assets/f-logo.svg";
 
 export const Footer: React.FC = () => {

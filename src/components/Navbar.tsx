@@ -1,11 +1,12 @@
 import React from 'react';
-import { Bell} from 'lucide-react';
+import { GetAppButton } from './GetAppButton';
 import logo from "../assets/logo.svg";
-
 export const Navbar: React.FC = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-6 md:px-12 lg:px-20 bg-transparent relative z-20">
-      <div className="flex items-center gap-2 text-[#127c93] font-bold text-xl">
+    <nav className="bg-white sticky top-0 z-50 border-b border-gray-50">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 md:px-16 py-4 flex items-center justify-between">
+        {/* Brand Logo */}
+        <div className="flex items-center gap-2 text-[#127c93] font-bold text-xl">
     
         <div className="leading-none flex flex-col text-[#0f2d34]">
           <img
@@ -15,19 +16,26 @@ export const Navbar: React.FC = () => {
           />
         </div>
       </div>
-      
-      <div className="flex items-center gap-4">
-  {/* Notification / Bell button */}
-  <a href="/notifications" className="text-[#0f2d34] hover:text-[#127c93] transition-colors p-2">
-    <Bell size={24} />
-  </a>
+        
+        {/* Navigation & Actions Group */}
+        <div className="flex items-center gap-3 sm:gap-6 md:gap-8">
+          {/* Scrollable Links - Compact on mobile */}
+          <div className="flex items-center gap-3 sm:gap-4 md:gap-6 text-[#0f2d34] font-bold text-[10px] sm:text-[11px] md:text-sm whitespace-nowrap py-1">
+            <a href="#" className="hover:text-[#127c93] transition-colors">Home</a>
+            <a href="#" className="hover:text-[#127c93] transition-colors">About</a>
+            <a href="#" className="hover:text-[#127c93] transition-colors">Contact</a>
+          </div>
 
-  {/* Sign In button */}
-  <a href="/signin" className="bg-[#127c93] text-white px-8 py-2.5 rounded-xl font-bold hover:bg-[#0e6375] transition-colors shadow-lg">
-    Sign In
-  </a>
-</div>
+          {/* Static Buttons Group */}
+          <div className="flex items-center gap-2 shrink-0">
+            <button className="hidden sm:block border border-gray-200 text-[#0f2d34] px-4 md:px-5 py-2 rounded-lg font-bold text-xs md:text-sm hover:bg-gray-50 transition-colors">
+              Partner With Us
+            </button>
+            <GetAppButton variant="teal" iconTheme="white" />
 
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
